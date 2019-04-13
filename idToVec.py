@@ -7,4 +7,4 @@ with tf.Session() as sess:
     tf.initializers.global_variables().run()
     print(testVariable.eval())
     saver = tf.train.Saver()
-    saver.save(sess, "/tmp/my-model")
+    saver.save(sess, "./my-model")
